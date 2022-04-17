@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-          SQL FORMATER TOLL
+          SQL FORMATTER TOLL
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>

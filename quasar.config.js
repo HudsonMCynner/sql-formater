@@ -147,9 +147,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: 'SQL Formater',
-        short_name: 'SQL Formater',
-        description: 'A Simple SQL FOrmater',
+        name: 'SQL Formatter',
+        short_name: 'SQL Formatter',
+        description: 'A Simple SQL Formatter',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -214,7 +214,7 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'sql-formater'
+        appId: 'sql-formatter'
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain

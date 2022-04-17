@@ -1,8 +1,8 @@
 {
-  "name": "sql-formater",
+  "name": "sql-formatter",
   "version": "0.0.1",
-  "description": "A Simple SQL FOrmater",
-  "productName": "SQL Formater",
+  "description": "A Simple SQL FOrmatter",
+  "productName": "SQL Formatter",
   "author": "Hudson <hudsonmachado2012@gmail.com>",
   "private": true,
   "scripts": {
