@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-          SQL FORMATTER TOLL
+          SQL FORMAT TOOL
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
