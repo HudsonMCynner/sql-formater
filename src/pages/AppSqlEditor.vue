@@ -29,7 +29,7 @@
       </q-btn>
       <q-btn
         icon="fas fa-trash-alt"
-        @click="emit('clean')"
+        @click="model = ''"
         outline
         size="sm"
       >

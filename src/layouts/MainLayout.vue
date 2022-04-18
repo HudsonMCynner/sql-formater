@@ -5,8 +5,6 @@
         <q-toolbar-title>
           SQL FORMATTER TOLL
         </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
     <q-page-container>
