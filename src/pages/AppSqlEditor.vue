@@ -36,29 +36,16 @@
         <q-tooltip>Limpar</q-tooltip>
       </q-btn>
     </div>
-    <div class="group-editor">
-      <div
-        class="sql-editor">
-        <codemirror
-          border
-          v-model:value="model"
-          :options="cmOption"
-          @blur="blur"
-          @input="inputSQL"
-          @cursorActivity="cursorActivity"
-        />
-      </div>
-      <div
-        class="sql-editor">
-        <codemirror
-          border
-          v-model:value="formatedSql"
-          :options="cmOption"
-          @blur="blur"
-          @input="inputSQL"
-          @cursorActivity="cursorActivity"
-        />
-      </div>
+    <div
+      class="sql-editor">
+      <codemirror
+        border
+        v-model:value="model"
+        :options="cmOption"
+        @blur="blur"
+        @input="inputSQL"
+        @cursorActivity="cursorActivity"
+      />
     </div>
   </div>
 </template>
@@ -92,7 +79,7 @@ export default {
   }),
   methods: {
     formatSQL () {
-      this.formatedSql = sqlFormatter.format(this.model, {
+      this.model = sqlFormatter.format(this.model, {
         language: 'sql',
         indent: '   ',
         reservedWordCase: 'upper'
@@ -150,10 +137,11 @@ export default {
 .sql-editor-container
   border: 1px solid #959595
   border-radius: 3px
-  height: calc(100vh - 50px)
+  height: calc(100vh - 230px)
+  width: 100%
   .actions-editor
     padding: 5px
-    border-width: 1px 1px 0 1px
+    border-width: 0px 0px 1px 0px
     border-style: solid
     border-color: #959595
     display: grid
@@ -162,25 +150,20 @@ export default {
     justify-content: center
     .q-btn
       font-size: 12px
-  .group-editor
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    grid-column-gap: 25px
-    height: calc(100% - 40px)
-    .sql-editor
+  .sql-editor
+    font-size: 16px
+    height: 100%
+    width: 100%
+    .codemirror-container
+      height: calc(100% - 37px)
+    & > *
       font-size: 16px
+    //height calc(100% - 30px)
+    //height: calc(100vh - 255px);
+    overflow: auto
+    :deep(.vue-codemirror)
+      border: 1px solid #959595
       height: 100%
-      width: 100%
-      .codemirror-container
-        height: calc(100% - 7px)
-      & > *
-        font-size: 16px
-      //height calc(100% - 30px)
-      //height: calc(100vh - 255px);
-      overflow: auto
-      :deep(.vue-codemirror)
-        border: 1px solid #959595
+      .CodeMirror
         height: 100%
-        .CodeMirror
-          height: 100%
 </style>

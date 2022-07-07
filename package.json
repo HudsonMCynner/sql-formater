@@ -2,7 +2,7 @@
   "name": "sql-formatter",
   "version": "0.0.1",
   "description": "A Simple SQL Formatter",
-  "productName": "SQL Formatter",
+  "productName": "SQL Editor",
   "author": "Hudson <hudsonmachado2012@gmail.com>",
   "private": true,
   "scripts": {
